@@ -1,0 +1,12 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php74-script .php
+suPHP_ConfigPath /home/regnfccb2
+##### LOCAWEB - NAO REMOVER #####
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/index\.jsp
+RewriteCond %{REQUEST_URI} !^/index\.htm
+RewriteRule ^([^/]+)$ /index.php?url=$1 [QSA,L]

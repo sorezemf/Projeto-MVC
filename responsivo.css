@@ -1,0 +1,52 @@
+
+/* Estilos para telas grandes (desktop) */
+@media (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para telas médias (tablets) */
+@media (max-width: 991px) {
+    body {
+        font-size: 14px;
+        
+    }
+}
+
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 767px) {
+    
+    html,body{
+        overflow-x: hidden;
+    }
+    header{
+        padding: 15px 5px;
+    }
+    .container-fluid{
+        justify-content: space-around !important;
+    }
+    header h1{
+        text-align: center;
+        display: inline-block;
+    }
+    main{
+        text-align: center;
+    
+    }
+    .painel-direito{
+        padding: 5px 10px;
+        width: 100vw;
+        margin: 0 auto;
+    }
+    table{
+        font-size: 0.7rem;
+    }
+    table button{
+        font-size: 0.5rem !important;
+    }
+    h2{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
